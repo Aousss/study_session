@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--Title section   -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Study Session"
+        android:textColor="#725CA9"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <!--Today section   -->
+    <RelativeLayout
+        android:id="@+id/todaySection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleText"
+        android:background="#EDE8F2"
+        android:layout_marginTop="15dp"
+        android:padding="15dp">
+
+        <!--Today Title    -->
+        <TextView
+            android:id="@+id/todayTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upcoming"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#725CA9"
+            android:textColor="@color/white"/>
+
+        <!--Task Section    -->
+        <RelativeLayout
+            android:id="@+id/taskSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/todayTitleTextView"
+            android:background="@color/cardview_light_background"
+            android:padding="8dp">
+
+            <!--Task Information    -->
+            <TextView
+                android:id="@+id/taskTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MAD Project"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#725CA9"/>
+
+            <TextView
+                android:id="@+id/taskDescTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/taskTitleTextView"
+                android:text="Explain about the database."
+                android:textSize="16sp"
+                android:paddingBottom="5dp"
+                android:textStyle="italic"
+                android:textColor="#725CA9"/>
+
+            <TextView
+                android:id="@+id/taskDateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/taskDescTextView"
+                android:text="Date: 20 December 2023"
+                android:textSize="16sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/taskTimeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/taskDateTextView"
+                android:text="Time: 3pm"
+                android:textSize="16sp"
+                android:textColor="#000"/>
+
+        </RelativeLayout>
+
+        <!--Task Section    -->
+        <RelativeLayout
+            android:id="@+id/taskSection2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/taskSection"
+            android:background="@color/cardview_light_background"
+            android:padding="8dp"
+            android:layout_marginTop="5dp">
+
+            <!--Task Information    -->
+            <TextView
+                android:id="@id/taskTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WIA2007 Project"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#725CA9"/>
+
+            <TextView
+                android:id="@id/taskDescTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/taskTitleTextView"
+                android:text="Explain about the database."
+                android:textSize="16sp"
+                android:paddingBottom="5dp"
+                android:textStyle="italic"
+                android:textColor="#725CA9"/>
+
+            <TextView
+                android:id="@id/taskDateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/taskDescTextView"
+                android:text="Date: 20 December 2023"
+                android:textSize="16sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@id/taskTimeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/taskDateTextView"
+                android:text="Time: 3pm"
+                android:textSize="16sp"
+                android:textColor="#000"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/newTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="2dp"
+            android:backgroundTint="#725CA9"
+            android:src="@drawable/baseline_add_24"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
